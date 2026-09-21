@@ -1291,3 +1291,85 @@ footer a:hover {
     scroll-behavior: auto;
   }
 }
+/* =========================================
+   SONAR HERO — IMAGE VISIBILITY FIX
+   ========================================= */
+
+.sonar-hero {
+  position: relative;
+  min-height: 760px;
+  overflow: hidden;
+  isolation: isolate;
+  background: #05080d;
+}
+
+/* Main SONAR/RADAR image */
+.sonar-hero .sonar-hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  background-image: url("/assets/sonar-hero.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+/* Dark colour overlay */
+.sonar-hero .sonar-hero-gradient {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 8, 13, 0.96) 0%,
+      rgba(5, 8, 13, 0.78) 42%,
+      rgba(5, 8, 13, 0.30) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(5, 8, 13, 0.20) 0%,
+      rgba(5, 8, 13, 0.72) 100%
+    );
+}
+
+/* Radar grid */
+.sonar-hero .sonar-grid-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.18;
+  background-image:
+    linear-gradient(rgba(79, 209, 224, 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79, 209, 224, 0.18) 1px, transparent 1px);
+  background-size: 70px 70px;
+}
+
+/* Text and controls must remain above the image */
+.sonar-hero .sonar-hero-content,
+.sonar-hero .hero-side-label,
+.sonar-hero .hero-bottom-line {
+  position: relative;
+  z-index: 3;
+}
+
+/* Prevent generic hero pseudo-elements from hiding the image */
+.sonar-hero::before,
+.sonar-hero::after {
+  pointer-events: none;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .sonar-hero {
+    min-height: 700px;
+  }
+
+  .sonar-hero .sonar-hero-background {
+    background-position: 65% center;
+  }
+}
