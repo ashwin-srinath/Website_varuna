@@ -15,7 +15,12 @@ export default function Hero() {
         </div>
 
         <div className="hero-title-row rev">
-          <Radar className="hero-radar-icon" size={38} strokeWidth={1} />
+          <Radar
+            className="hero-radar-icon"
+            size={38}
+            strokeWidth={1}
+            aria-hidden="true"
+          />
 
           <p className="hero-status">
             ADVANCED TECHNOLOGY
