@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowRight, Radar } from 'lucide-react';
+import { ArrowDown, ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -9,35 +9,20 @@ export default function Hero() {
 
       <div className="wrap sonar-hero-content">
         <div className="hero-kicker rev">
-          <span>SONAR · RADAR · SIGNAL PROCESSING</span>
-          <span>ENGINEERING · TECHNOLOGY · EXPERTISE</span>
-        </div>
-
-        <div className="hero-title-row rev">
-          <Radar
-            className="hero-radar-icon"
-            size={38}
-            strokeWidth={1}
-            aria-hidden="true"
-          />
-
-          <p className="hero-status">
-            ADVANCED TECHNOLOGY
-            <br />
-            FOR COMPLEX ENVIRONMENTS
-          </p>
+          OCEAN INSIGHTS. REAL-WORLD IMPACT.
         </div>
 
         <h1 className="rev">
-          Deep Knowledge.
+          Expertise Beneath the
           <br />
-          <span>Sharper Detection.</span>
+          Surface. Possibilities
+          <br />
+          Beyond Boundaries.
         </h1>
 
         <p className="lead rev">
-          Specialized consultancy, technical training, and engineering
-          solutions for SONAR, RADAR, digital signal processing, embedded
-          systems, VLSI, and advanced technology applications.
+          Specialized consultancy, technical expertise, professional training,
+          and interdisciplinary solutions for a complex and evolving world.
         </p>
 
         <div className="cta rev">
@@ -47,7 +32,7 @@ export default function Hero() {
           </a>
 
           <a href="#contact" className="btn ghost">
-            Start a Conversation
+            Get in Touch
           </a>
         </div>
 
@@ -58,11 +43,10 @@ export default function Hero() {
       </div>
 
       <div className="hero-side-label" aria-hidden="true">
-        <span>SONAR</span>
-        <span>RADAR</span>
-        <span>DSP</span>
-        <span>VLSI</span>
-        <span>EMBEDDED SYSTEMS</span>
+        <span>PEOPLE</span>
+        <span>TECHNOLOGY</span>
+        <span>OCEAN</span>
+        <span>A SAFER WORLD</span>
       </div>
 
       <div className="hero-bottom-line" aria-hidden="true">
