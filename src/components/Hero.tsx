@@ -1,5 +1,4 @@
 import { ArrowDown, ArrowRight, Radar } from 'lucide-react';
-import { company } from '../config/site';
 
 export default function Hero() {
   return (
