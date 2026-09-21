@@ -243,15 +243,15 @@ header {
 
 /* Main hero image */
 
+
 .sonar-hero-background {
   position: absolute;
   inset: 0;
-  z-index: -4;
+  z-index: 0;
   background-image: url("/assets/sonar-hero.png");
-  background-position: center right;
-  background-repeat: no-repeat;
   background-size: cover;
-  animation: sonarHeroMovement 24s ease-in-out infinite alternate;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .sonar-hero-gradient {
@@ -273,7 +273,10 @@ header {
       rgba(2, 7, 13, 0.85)
     );
 }
-
+.sonar-hero {
+  position: relative;
+  overflow: hidden;
+}
 .sonar-grid-overlay {
   position: absolute;
   inset: 0;
